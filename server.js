@@ -19,6 +19,11 @@ app.use(bodyParser.json());
 //===============================================================
 //getting data from server
 // ===============================================================
+
+app.get('/', function(req, res){
+  res.redirect('/api/shoes');
+})
+
 // -route for showing the list of all shoes in the database
 // GET : /api/shoes
 app.get('/api/shoes', shoeCat.index);
