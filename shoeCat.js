@@ -14,6 +14,7 @@ module.exports = function(models) {
   const addShoe = function(req, res, next) {
 //function to add a new shoe to the database
     models.shoes.findOne({
+      _id: req.body.id,
       brand: req.body.brand,
       size: req.body.size,
       colour: req.body.colour
@@ -21,6 +22,7 @@ module.exports = function(models) {
       console.log('Shoe already in stock');
       if (shoe) {
         res.json({
+          _id: req.body.id,
           brand: req.body.brand,
           size: req.body.size,
           colour: req.body.colour,
@@ -29,6 +31,7 @@ module.exports = function(models) {
       }
       if (!shoe) {
         models.shoes.create({
+          _id: req.body.id,
           brand: req.body.brand,
           size: req.body.size,
           colour: req.body.colour,
@@ -44,6 +47,7 @@ module.exports = function(models) {
                 res.send(err)
               }
               res.json({
+                _id: req.body.id,
                 brand: req.body.brand,
                 size: req.body.size,
                 colour: req.body.colour,
@@ -100,8 +104,25 @@ module.exports = function(models) {
 
   const sold = function(req, res, next){
     //find shoes, sell them and update stock count
+    var id = req.params.id;
 
-    
+    models.shoes.findById(req.params.id, function(err, shoes){
+      if (err){
+        res.send(err);
+      }
+      if(shoes){
+        shoes.inStock--;
+        shoes.save(function(err, result){
+          if (err) {
+            res.send(err);
+          }
+          if (result) {
+            console.log('Result after save: ' + result);
+            res.json(shoes);
+          }
+        })
+      }
+    })
   }
 
   return {

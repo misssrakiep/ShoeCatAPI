@@ -36,12 +36,13 @@ app.get('/api/shoes/size/:size', shoeCat.getSize);
 app.get('/api/shoes/brand/:brand/size/:size', shoeCat.getBrandAndSize);
 
 
+
 // =================================================================
 //sending data to server
 // =================================================================
 // -route that updates stock levels
 // POST  : /api/shoes/sold/:id
-// app.post('/api/shoes/sold/:id', shoeCat.sold);
+app.post('/api/shoes/sold/:id', shoeCat.sold);
 
 // -route that adds a new shoe to the stock
 // POST : /api/shoes/
