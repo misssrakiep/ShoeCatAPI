@@ -5,7 +5,7 @@ const app = express();
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const Models = require('./shoeCatModel');
-const models = Models('mongodb://localhost:270171/shoes');
+const models = Models(process.env.MONGO_DB_URL ||'mongodb://localhost:270171/shoes');
 const ShoeCat = require('./shoeCat')
 const shoeCat = ShoeCat(models);
 
