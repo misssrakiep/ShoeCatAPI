@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 module.exports = function(mongoUrl){
-  mongoose.Promise = global.Promise;
+  // mongoose.Promise = global.Promise;
 
   mongoose.connect(mongoUrl, {
     useMongoClient: true
