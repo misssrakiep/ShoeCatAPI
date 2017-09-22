@@ -17,12 +17,28 @@ This API can be used in conjuction with a front-end application that will rpovid
 
 Clone the git repository where the API is safely stashed [here](https://github.com/misssrakiep/ShoeCatAPI).
 
+## Creating you development environment
+
+
+
 ### -Prerequisites
 
 * Open up the project in your favourite text editor. I have used [Atom](https://atom.io/)
 * In the terminal: change to the project directory to install all dependencies in the package.json file
 
   ` $ npm install`
+
+* Or alternatively you could install them one at a time to make sure they are all there:
+
+  `$ npm install express --save`
+
+  `$ npm install mongodb --save`
+
+  `$ npm install mongoose --save`
+
+  `$ npm install body-parser --save`
+
+  `$ npm install node-static --save`
 
 ## -Setting up the API
 
