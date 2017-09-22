@@ -1,6 +1,6 @@
 # shoeCatalogueAPI
 
-##-Project oveview
+## -Project oveview
 
 This [API](https://en.wikipedia.org/wiki/Application_programming_interface) allows a user to enter data through an application called [POSTMAN](https://www.getpostman.com/postman). The user of this API can:
 
@@ -13,25 +13,28 @@ This [API](https://en.wikipedia.org/wiki/Application_programming_interface) allo
 
 This API can be used in conjuction with a front-end application that will rpovide the user with an interface to do all the above mentioned.
 
-##-Getting started on the API
+## -Getting started on the API
 
 Clone the git repository where the API is safely stashed [here](https://github.com/misssrakiep/ShoeCatAPI).
 
-###-Prerequisites
+### -Prerequisites
 
 * Open up the project in your favourite text editor. I have used [Atom](https://atom.io/)
 * In the terminal: change to the project directory to install all dependencies in the package.json file
 
   ` $ npm install`
 
-##-Setting up the API
+## -Setting up the API
+
 *How do I install these tools and dependencies*
 
--Testing or Running
+## -Testing or Running
+
 *Test the application*
 
--Issues
+## -Issues
+
 *Known issues about this application*
 
--Contributions
+## -Contributions
 *Contributions from other developers and acknowledgements of libraries used
