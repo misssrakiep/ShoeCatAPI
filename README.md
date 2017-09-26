@@ -62,19 +62,16 @@ Get started with Heroku [here](https://devcenter.heroku.com/start).
 
 
 As an easy option you can open the package.json file:
-`"dependencies": {
 
+```
+"dependencies": {
   "body-parser": "^1.18.1",
-
   "express": "^4.15.4",
-
   "mongodb": "^2.2.31",
-
   "mongoose": "^4.11.11",
-
   "node-static": "^0.7.9"
-
-}`
+}
+```
  of the API and type
 `$ npm install`
 in your command line,
