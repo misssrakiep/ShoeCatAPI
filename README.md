@@ -1,4 +1,5 @@
 # shoeCatalogueAPI
+~~ ~~
 
 ## -Project oveview
 
@@ -17,22 +18,58 @@ This API can be used in conjuction with a front-end application that will rpovid
 
 Clone the git repository where the API is safely stashed [here](https://github.com/misssrakiep/ShoeCatAPI).
 
+### - Cloning
+
+In your terminal, copy and paste the following
+command:
+
+`$ git clone https://github.com/misssrakiep/ShoeCatAPI`
+
 ## Creating you development environment
-
-
 
 ### -Prerequisites
 
  To start contributing to the API you will need the following tools:
-* [NodeJS](https://nodejs.org/en/)
-* [npm](https://www.npmjs.com/)
-* [Nodemon](https://nodemon.io/)
+
+
+* NodeJS
+* npm
+* Nodemon
+* A free Heroku account
 * A text editor of your choice
+
+*NodeJS*
+
+Node.js is a platform built on Chrome's JavaScript runtime for easily building fast and scalable network applications. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices.
+
+*npm*
+
+npm , short for Node Package Manager, is two things: first and foremost, it is an online repository for the publishing of open-source Node.js projects; second, it is a command-line utility for interacting with said repository that aids in package installation, version management, and dependency management.
+
+*Nodemon*
+
+Nodemon is a utility that will monitor for any changes in your source and automatically restart your server. Perfect for development. Install it using npm. Just use nodemon instead of node to run your code, and now your process will automatically restart when your code changes.
+
+*Heroku*
+
+Heroku is a cloud platform that lets companies build, deliver, monitor and scale apps — we're the fastest way to go from idea to URL, bypassing all those infrastructure headaches.
+
+Create your free account [here](https://signup.heroku.com/).
 
 ## -Setting up the API
 ### -Packages you will need to install
 
-As an easy option you can open the package.json file of the API and type
+
+
+As an easy option you can open the package.json file:
+`"dependencies": {
+  "body-parser": "^1.18.1",
+  "express": "^4.15.4",
+  "mongodb": "^2.2.31",
+  "mongoose": "^4.11.11",
+  "node-static": "^0.7.9"
+}`
+ of the API and type
 `$ npm install`
 in your command line,
 
@@ -59,9 +96,9 @@ in your command line,
 
   `$ npm install node-static --save`
 
-## -Testing or Running
+## -Running the app locally
 
-Change directories into the API folder and run `$ nodemon` or `$ node index.js` in you terminal.
+Change directories into the API folder and run `$ nodemon` or `$ node index.js` in you terminal. The following text shoud then appear in your terminal: `Running on port 3010`
 
 ## -Issues
  I am currently aware that the API does not understand the `POST` request on the "sold" route, although this does work when using the API in conjunction with POSTMAN.

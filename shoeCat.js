@@ -120,6 +120,11 @@ module.exports = function(models) {
             console.log('Result after save: ' + result);
             res.json(shoes);
           }
+          if (result.inStock < 1) {
+        result.remove(function(err, check) {
+            if (err) {
+                return done(err)
+            }
         })
       }
     })
