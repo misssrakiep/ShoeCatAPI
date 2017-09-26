@@ -1,5 +1,5 @@
 # shoeCatalogueAPI
-~~ ~~
+ --------
 
 ## -Project oveview
 
@@ -12,7 +12,7 @@ This [API](https://en.wikipedia.org/wiki/Application_programming_interface) allo
 * update the stock levels when a shoe is sold
 * and add a new shoe to the inventory
 
-This API can be used in conjuction with a front-end application that will rpovide the user with an interface to do all the above mentioned.
+This API can be used in conjuction with a front-end application that will provide the user with an interface to do all the above mentioned.
 
 ## -Getting started on the API
 
@@ -38,23 +38,23 @@ command:
 * A free Heroku account
 * A text editor of your choice
 
-*NodeJS*
+**NodeJS**
 
 Node.js is a platform built on Chrome's JavaScript runtime for easily building fast and scalable network applications. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices.
 
-*npm*
+**npm**
 
 npm , short for Node Package Manager, is two things: first and foremost, it is an online repository for the publishing of open-source Node.js projects; second, it is a command-line utility for interacting with said repository that aids in package installation, version management, and dependency management.
 
-*Nodemon*
+**Nodemon**
 
 Nodemon is a utility that will monitor for any changes in your source and automatically restart your server. Perfect for development. Install it using npm. Just use nodemon instead of node to run your code, and now your process will automatically restart when your code changes.
 
-*Heroku*
+**Heroku**
 
 Heroku is a cloud platform that lets companies build, deliver, monitor and scale apps — we're the fastest way to go from idea to URL, bypassing all those infrastructure headaches.
 
-Create your free account [here](https://signup.heroku.com/).
+Get started with Heroku [here](https://devcenter.heroku.com/start).
 
 ## -Setting up the API
 ### -Packages you will need to install
@@ -63,11 +63,17 @@ Create your free account [here](https://signup.heroku.com/).
 
 As an easy option you can open the package.json file:
 `"dependencies": {
+
   "body-parser": "^1.18.1",
+
   "express": "^4.15.4",
+
   "mongodb": "^2.2.31",
+
   "mongoose": "^4.11.11",
+
   "node-static": "^0.7.9"
+
 }`
  of the API and type
 `$ npm install`
