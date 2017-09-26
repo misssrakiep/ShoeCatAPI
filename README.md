@@ -1,22 +1,22 @@
 # shoeCatalogueAPI
- --------
 
 ## Contents
 
- * [Project Overview](## -Project oveview)
+ * Project Overview
 
- * [Getting started on the API](## -Getting started on the API)
+ * Getting started on the API
 
- * [Creating you development environment](## Creating you development environment)
+ * Creating you development environment
 
- * [Setting up the API](## -Setting up the API)
+ * Setting up the API
 
- * [Running the app locally](## -Running the app locally)
+ * Running the app locally
 
- * [Version control](## -Version control)
+ * Version control
 
- * [Issues](## -Issues)
+ * Issues
 
+ --------
 ## -Project oveview
 
 This [API](https://en.wikipedia.org/wiki/Application_programming_interface) allows a user to enter data through an application called [POSTMAN](https://www.getpostman.com/postman). The user of this API can:
