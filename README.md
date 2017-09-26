@@ -121,7 +121,7 @@ Change directories into the API folder and run `$ nodemon` or `$ node index.js` 
 
 ## -Version control
 
-[Git]() is used for version control on this project.
+[Git](https://en.wikipedia.org/wiki/Git) is used for version control on this project.
 
 
 ## -Issues
