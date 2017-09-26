@@ -1,6 +1,22 @@
 # shoeCatalogueAPI
  --------
 
+## Contents
+
+ * [Project Overview](## -Project oveview)
+
+ * [Getting started on the API](## -Getting started on the API)
+
+ * [Creating you development environment](## Creating you development environment)
+
+ * [Setting up the API](## -Setting up the API)
+
+ * [Running the app locally](## -Running the app locally)
+
+ * [Version control](## -Version control)
+
+ * [Issues](## -Issues)
+
 ## -Project oveview
 
 This [API](https://en.wikipedia.org/wiki/Application_programming_interface) allows a user to enter data through an application called [POSTMAN](https://www.getpostman.com/postman). The user of this API can:
@@ -102,6 +118,11 @@ in your command line,
 ## -Running the app locally
 
 Change directories into the API folder and run `$ nodemon` or `$ node index.js` in you terminal. The following text shoud then appear in your terminal: `Running on port 3010`
+
+## -Version control
+
+[Git]() is used for version control on this project.
+
 
 ## -Issues
  I am currently aware that the API does not understand the `POST` request on the "sold" route, although this does work when using the API in conjunction with POSTMAN.
