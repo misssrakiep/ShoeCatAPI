@@ -23,34 +23,40 @@ Clone the git repository where the API is safely stashed [here](https://github.c
 
 ### -Prerequisites
 
-* Open up the project in your favourite text editor. I have used [Atom](https://atom.io/)
-* In the terminal: change to the project directory to install all dependencies in the package.json file
-
-  ` $ npm install`
-
-* Or alternatively you could install them one at a time to make sure they are all there:
-
-  `$ npm install express --save`
-
-  `$ npm install mongodb --save`
-
-  `$ npm install mongoose --save`
-
-  `$ npm install body-parser --save`
-
-  `$ npm install node-static --save`
+ To start contributing to the API you will need the following tools:
+* [NodeJS](https://nodejs.org/en/)
+* [npm](https://www.npmjs.com/)
+* [Nodemon](https://nodemon.io/)
+* A text editor of your choice
 
 ## -Setting up the API
+### -Packages you will need to install
 
-*How do I install these tools and dependencies*
+As an easy option you can open the package.json file of the API and type
+`$ npm install`
+in your command line,
+
+ Or alternatively you could install them one at a time to make sure they are all there:
+
+
+* [ExpressJS](https://expressjs.com/), a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
+  `$ npm install express --save`
+
+* [Mongo DB](https://www.mongodb.com/) ,a free and open-source cross-platform document-oriented database program.
+  `$ npm install mongodb --save`
+
+* [Mongoose](http://mongoosejs.com/),a straight-forward, schema-based solution to model your application data.
+  `$ npm install mongoose --save`
+
+* [Body-parser](https://www.npmjs.com/package/body-parser), extracts the entire body portion of an incoming request stream and exposes it on req.body .
+  `$ npm install body-parser --save`
+
+* [Node-static](https://www.npmjs.com/package/node-static), understands and supports conditional GET and HEAD requests.
+  `$ npm install node-static --save`
 
 ## -Testing or Running
 
-*Test the application*
+Change directories into the API folder and run `$ nodemon` or `$ node index.js` in you terminal. 
 
 ## -Issues
-
-*Known issues about this application*
-
-## -Contributions
-*Contributions from other developers and acknowledgements of libraries used
+ I am currently aware that the API does not understand the `POST` request on the "sold" route, although this does work when using the API in conjunction with POSTMAN.
