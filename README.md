@@ -40,23 +40,28 @@ in your command line,
 
 
 * [ExpressJS](https://expressjs.com/), a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
+
   `$ npm install express --save`
 
 * [Mongo DB](https://www.mongodb.com/) ,a free and open-source cross-platform document-oriented database program.
+
   `$ npm install mongodb --save`
 
 * [Mongoose](http://mongoosejs.com/),a straight-forward, schema-based solution to model your application data.
+
   `$ npm install mongoose --save`
 
 * [Body-parser](https://www.npmjs.com/package/body-parser), extracts the entire body portion of an incoming request stream and exposes it on req.body .
+
   `$ npm install body-parser --save`
 
 * [Node-static](https://www.npmjs.com/package/node-static), understands and supports conditional GET and HEAD requests.
+
   `$ npm install node-static --save`
 
 ## -Testing or Running
 
-Change directories into the API folder and run `$ nodemon` or `$ node index.js` in you terminal. 
+Change directories into the API folder and run `$ nodemon` or `$ node index.js` in you terminal.
 
 ## -Issues
  I am currently aware that the API does not understand the `POST` request on the "sold" route, although this does work when using the API in conjunction with POSTMAN.
