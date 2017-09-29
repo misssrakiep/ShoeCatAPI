@@ -104,21 +104,21 @@ module.exports = function(models) {
 
   const sold = function(req, res, next){
     //find shoes, sell them and update stock count
-    var id = req.params._id;
+    var id = req.params.id;
 
     models.shoes.findById(req.params.id, function(err, shoes){
       if (err){
         res.send(err);
       }
       if(shoes){
-        shoes.inStock--;
+        shoes.inStock --;
         shoes.save(function(err, result){
           if (err) {
             res.send(err);
           }
           if (result) {
             console.log('Result after save: ' + result);
-            res.json(shoes);
+            res.redirect('');
           }
           })
       }
