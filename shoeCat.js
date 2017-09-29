@@ -118,7 +118,7 @@ module.exports = function(models) {
           }
           if (result) {
             console.log('Result after save: ' + result);
-            res.redirect('');
+            res.redirect('/api/shoes');
           }
           })
       }
