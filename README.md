@@ -39,7 +39,7 @@ Clone the git repository where the API is safely stashed [here](https://github.c
 In your terminal, copy and paste the following
 command:
 
-`$ git clone https://github.com/misssrakiep/ShoeCatAPI`
+`$ git clone git@github.com:misssrakiep/ShoeCatAPI.git`
 
 ## Creating you development environment
 

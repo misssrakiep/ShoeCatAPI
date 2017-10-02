@@ -106,7 +106,7 @@ module.exports = function(models) {
     //find shoes, sell them and update stock count
     var id = req.params.id;
 
-    models.shoes.findById(req.params.id, function(err, shoes){
+    models.shoes.findById({id : req.params.id}, function(err, shoes){
       if (err){
         res.send(err);
       }
